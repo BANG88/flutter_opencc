@@ -1,0 +1,812 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC2068681C11F99400D41200 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2068671C11F99400D41200 /* main.m */; };
+		AC20686B1C11F99400D41200 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC20686A1C11F99400D41200 /* AppDelegate.m */; };
+		AC20686E1C11F99400D41200 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC20686D1C11F99400D41200 /* ViewController.m */; };
+		AC2068711C11F99400D41200 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC20686F1C11F99400D41200 /* Main.storyboard */; };
+		AC2068731C11F99400D41200 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC2068721C11F99400D41200 /* Assets.xcassets */; };
+		AC2068761C11F99400D41200 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC2068741C11F99400D41200 /* LaunchScreen.storyboard */; };
+		AC2068811C11F99400D41200 /* OpenCCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2068801C11F99400D41200 /* OpenCCTests.m */; };
+		AC20688C1C11F99400D41200 /* OpenCCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC20688B1C11F99400D41200 /* OpenCCUITests.m */; };
+		AC2068A41C11F9C600D41200 /* hk2s.json in Resources */ = {isa = PBXBuildFile; fileRef = AC20689A1C11F9C600D41200 /* hk2s.json */; };
+		AC2068A51C11F9C600D41200 /* s2hk.json in Resources */ = {isa = PBXBuildFile; fileRef = AC20689B1C11F9C600D41200 /* s2hk.json */; };
+		AC2068A61C11F9C600D41200 /* s2t.json in Resources */ = {isa = PBXBuildFile; fileRef = AC20689C1C11F9C600D41200 /* s2t.json */; };
+		AC2068A71C11F9C600D41200 /* s2tw.json in Resources */ = {isa = PBXBuildFile; fileRef = AC20689D1C11F9C600D41200 /* s2tw.json */; };
+		AC2068A81C11F9C600D41200 /* s2twp.json in Resources */ = {isa = PBXBuildFile; fileRef = AC20689E1C11F9C600D41200 /* s2twp.json */; };
+		AC2068A91C11F9C600D41200 /* t2hk.json in Resources */ = {isa = PBXBuildFile; fileRef = AC20689F1C11F9C600D41200 /* t2hk.json */; };
+		AC2068AA1C11F9C600D41200 /* t2s.json in Resources */ = {isa = PBXBuildFile; fileRef = AC2068A01C11F9C600D41200 /* t2s.json */; };
+		AC2068AB1C11F9C600D41200 /* t2tw.json in Resources */ = {isa = PBXBuildFile; fileRef = AC2068A11C11F9C600D41200 /* t2tw.json */; };
+		AC2068AC1C11F9C600D41200 /* tw2s.json in Resources */ = {isa = PBXBuildFile; fileRef = AC2068A21C11F9C600D41200 /* tw2s.json */; };
+		AC2068AD1C11F9C600D41200 /* tw2sp.json in Resources */ = {isa = PBXBuildFile; fileRef = AC2068A31C11F9C600D41200 /* tw2sp.json */; };
+		AC2068BC1C11F9D100D41200 /* HKVariants.txt in Resources */ = {isa = PBXBuildFile; fileRef = AC2068AF1C11F9D100D41200 /* HKVariants.txt */; };
+		AC2068BD1C11F9D100D41200 /* HKVariantsPhrases.txt in Resources */ = {isa = PBXBuildFile; fileRef = AC2068B01C11F9D100D41200 /* HKVariantsPhrases.txt */; };
+		AC2068BE1C11F9D100D41200 /* HKVariantsRevPhrases.txt in Resources */ = {isa = PBXBuildFile; fileRef = AC2068B11C11F9D100D41200 /* HKVariantsRevPhrases.txt */; };
+		AC2068BF1C11F9D100D41200 /* JPVariants.txt in Resources */ = {isa = PBXBuildFile; fileRef = AC2068B21C11F9D100D41200 /* JPVariants.txt */; };
+		AC2068C01C11F9D100D41200 /* STCharacters.txt in Resources */ = {isa = PBXBuildFile; fileRef = AC2068B31C11F9D100D41200 /* STCharacters.txt */; };
+		AC2068C11C11F9D100D41200 /* STPhrases.txt in Resources */ = {isa = PBXBuildFile; fileRef = AC2068B41C11F9D100D41200 /* STPhrases.txt */; };
+		AC2068C21C11F9D100D41200 /* TSCharacters.txt in Resources */ = {isa = PBXBuildFile; fileRef = AC2068B51C11F9D100D41200 /* TSCharacters.txt */; };
+		AC2068C31C11F9D100D41200 /* TSPhrases.txt in Resources */ = {isa = PBXBuildFile; fileRef = AC2068B61C11F9D100D41200 /* TSPhrases.txt */; };
+		AC2068C41C11F9D100D41200 /* TWPhrasesIT.txt in Resources */ = {isa = PBXBuildFile; fileRef = AC2068B71C11F9D100D41200 /* TWPhrasesIT.txt */; };
+		AC2068C51C11F9D100D41200 /* TWPhrasesName.txt in Resources */ = {isa = PBXBuildFile; fileRef = AC2068B81C11F9D100D41200 /* TWPhrasesName.txt */; };
+		AC2068C61C11F9D100D41200 /* TWPhrasesOther.txt in Resources */ = {isa = PBXBuildFile; fileRef = AC2068B91C11F9D100D41200 /* TWPhrasesOther.txt */; };
+		AC2068C71C11F9D100D41200 /* TWVariants.txt in Resources */ = {isa = PBXBuildFile; fileRef = AC2068BA1C11F9D100D41200 /* TWVariants.txt */; };
+		AC2068C81C11F9D100D41200 /* TWVariantsRevPhrases.txt in Resources */ = {isa = PBXBuildFile; fileRef = AC2068BB1C11F9D100D41200 /* TWVariantsRevPhrases.txt */; };
+		AC2068F41C11FA1200D41200 /* BinaryDict.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC2068CA1C11FA1200D41200 /* BinaryDict.cpp */; };
+		AC2068F51C11FA1200D41200 /* Config.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC2068CE1C11FA1200D41200 /* Config.cpp */; };
+		AC2068F61C11FA1200D41200 /* Conversion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC2068D01C11FA1200D41200 /* Conversion.cpp */; };
+		AC2068F71C11FA1200D41200 /* ConversionChain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC2068D21C11FA1200D41200 /* ConversionChain.cpp */; };
+		AC2068F81C11FA1200D41200 /* Converter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC2068D41C11FA1200D41200 /* Converter.cpp */; };
+		AC2068F91C11FA1200D41200 /* DartsDict.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC2068D61C11FA1200D41200 /* DartsDict.cpp */; };
+		AC2068FA1C11FA1200D41200 /* Dict.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC2068D81C11FA1200D41200 /* Dict.cpp */; };
+		AC2068FB1C11FA1200D41200 /* DictEntry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC2068DA1C11FA1200D41200 /* DictEntry.cpp */; };
+		AC2068FC1C11FA1200D41200 /* DictGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC2068DC1C11FA1200D41200 /* DictGroup.cpp */; };
+		AC2068FD1C11FA1200D41200 /* MaxMatchSegmentation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC2068E11C11FA1200D41200 /* MaxMatchSegmentation.cpp */; };
+		AC2068FE1C11FA1200D41200 /* PhraseExtract.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC2068E51C11FA1200D41200 /* PhraseExtract.cpp */; };
+		AC2068FF1C11FA1200D41200 /* Segmentation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC2068E71C11FA1200D41200 /* Segmentation.cpp */; };
+		AC2069001C11FA1200D41200 /* SimpleConverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC2068EB1C11FA1200D41200 /* SimpleConverter.cpp */; };
+		AC2069011C11FA1200D41200 /* TextDict.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC2068EE1C11FA1200D41200 /* TextDict.cpp */; };
+		AC2069021C11FA1200D41200 /* UTF8StringSlice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC2068F01C11FA1200D41200 /* UTF8StringSlice.cpp */; };
+		AC2069031C11FA1200D41200 /* UTF8Util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC2068F21C11FA1200D41200 /* UTF8Util.cpp */; };
+		AC2069401C11FA3400D41200 /* OpenCCService.mm in Sources */ = {isa = PBXBuildFile; fileRef = AC20693F1C11FA3400D41200 /* OpenCCService.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AC20687D1C11F99400D41200 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC20685B1C11F99400D41200 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC2068621C11F99400D41200;
+			remoteInfo = OpenCC;
+		};
+		AC2068881C11F99400D41200 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC20685B1C11F99400D41200 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC2068621C11F99400D41200;
+			remoteInfo = OpenCC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AC2068631C11F99400D41200 /* OpenCC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenCC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC2068671C11F99400D41200 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AC2068691C11F99400D41200 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AC20686A1C11F99400D41200 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AC20686C1C11F99400D41200 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AC20686D1C11F99400D41200 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AC2068701C11F99400D41200 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AC2068721C11F99400D41200 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC2068751C11F99400D41200 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AC2068771C11F99400D41200 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC20687C1C11F99400D41200 /* OpenCCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenCCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC2068801C11F99400D41200 /* OpenCCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenCCTests.m; sourceTree = "<group>"; };
+		AC2068821C11F99400D41200 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC2068871C11F99400D41200 /* OpenCCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenCCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC20688B1C11F99400D41200 /* OpenCCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenCCUITests.m; sourceTree = "<group>"; };
+		AC20688D1C11F99400D41200 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC20689A1C11F9C600D41200 /* hk2s.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hk2s.json; sourceTree = "<group>"; };
+		AC20689B1C11F9C600D41200 /* s2hk.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = s2hk.json; sourceTree = "<group>"; };
+		AC20689C1C11F9C600D41200 /* s2t.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = s2t.json; sourceTree = "<group>"; };
+		AC20689D1C11F9C600D41200 /* s2tw.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = s2tw.json; sourceTree = "<group>"; };
+		AC20689E1C11F9C600D41200 /* s2twp.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = s2twp.json; sourceTree = "<group>"; };
+		AC20689F1C11F9C600D41200 /* t2hk.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = t2hk.json; sourceTree = "<group>"; };
+		AC2068A01C11F9C600D41200 /* t2s.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = t2s.json; sourceTree = "<group>"; };
+		AC2068A11C11F9C600D41200 /* t2tw.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = t2tw.json; sourceTree = "<group>"; };
+		AC2068A21C11F9C600D41200 /* tw2s.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tw2s.json; sourceTree = "<group>"; };
+		AC2068A31C11F9C600D41200 /* tw2sp.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tw2sp.json; sourceTree = "<group>"; };
+		AC2068AF1C11F9D100D41200 /* HKVariants.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HKVariants.txt; sourceTree = "<group>"; };
+		AC2068B01C11F9D100D41200 /* HKVariantsPhrases.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HKVariantsPhrases.txt; sourceTree = "<group>"; };
+		AC2068B11C11F9D100D41200 /* HKVariantsRevPhrases.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HKVariantsRevPhrases.txt; sourceTree = "<group>"; };
+		AC2068B21C11F9D100D41200 /* JPVariants.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JPVariants.txt; sourceTree = "<group>"; };
+		AC2068B31C11F9D100D41200 /* STCharacters.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = STCharacters.txt; sourceTree = "<group>"; };
+		AC2068B41C11F9D100D41200 /* STPhrases.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = STPhrases.txt; sourceTree = "<group>"; };
+		AC2068B51C11F9D100D41200 /* TSCharacters.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TSCharacters.txt; sourceTree = "<group>"; };
+		AC2068B61C11F9D100D41200 /* TSPhrases.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TSPhrases.txt; sourceTree = "<group>"; };
+		AC2068B71C11F9D100D41200 /* TWPhrasesIT.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TWPhrasesIT.txt; sourceTree = "<group>"; };
+		AC2068B81C11F9D100D41200 /* TWPhrasesName.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TWPhrasesName.txt; sourceTree = "<group>"; };
+		AC2068B91C11F9D100D41200 /* TWPhrasesOther.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TWPhrasesOther.txt; sourceTree = "<group>"; };
+		AC2068BA1C11F9D100D41200 /* TWVariants.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TWVariants.txt; sourceTree = "<group>"; };
+		AC2068BB1C11F9D100D41200 /* TWVariantsRevPhrases.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TWVariantsRevPhrases.txt; sourceTree = "<group>"; };
+		AC2068CA1C11FA1200D41200 /* BinaryDict.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BinaryDict.cpp; path = ../../src/BinaryDict.cpp; sourceTree = "<group>"; };
+		AC2068CB1C11FA1200D41200 /* BinaryDict.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = BinaryDict.hpp; path = ../../src/BinaryDict.hpp; sourceTree = "<group>"; };
+		AC2068CC1C11FA1200D41200 /* CmdLineOutput.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = CmdLineOutput.hpp; path = ../../src/CmdLineOutput.hpp; sourceTree = "<group>"; };
+		AC2068CD1C11FA1200D41200 /* Common.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Common.hpp; path = ../../src/Common.hpp; sourceTree = "<group>"; };
+		AC2068CE1C11FA1200D41200 /* Config.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Config.cpp; path = ../../src/Config.cpp; sourceTree = "<group>"; };
+		AC2068CF1C11FA1200D41200 /* Config.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Config.hpp; path = ../../src/Config.hpp; sourceTree = "<group>"; };
+		AC2068D01C11FA1200D41200 /* Conversion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Conversion.cpp; path = ../../src/Conversion.cpp; sourceTree = "<group>"; };
+		AC2068D11C11FA1200D41200 /* Conversion.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Conversion.hpp; path = ../../src/Conversion.hpp; sourceTree = "<group>"; };
+		AC2068D21C11FA1200D41200 /* ConversionChain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ConversionChain.cpp; path = ../../src/ConversionChain.cpp; sourceTree = "<group>"; };
+		AC2068D31C11FA1200D41200 /* ConversionChain.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ConversionChain.hpp; path = ../../src/ConversionChain.hpp; sourceTree = "<group>"; };
+		AC2068D41C11FA1200D41200 /* Converter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Converter.cpp; path = ../../src/Converter.cpp; sourceTree = "<group>"; };
+		AC2068D51C11FA1200D41200 /* Converter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Converter.hpp; path = ../../src/Converter.hpp; sourceTree = "<group>"; };
+		AC2068D61C11FA1200D41200 /* DartsDict.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DartsDict.cpp; path = ../../src/DartsDict.cpp; sourceTree = "<group>"; };
+		AC2068D71C11FA1200D41200 /* DartsDict.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = DartsDict.hpp; path = ../../src/DartsDict.hpp; sourceTree = "<group>"; };
+		AC2068D81C11FA1200D41200 /* Dict.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Dict.cpp; path = ../../src/Dict.cpp; sourceTree = "<group>"; };
+		AC2068D91C11FA1200D41200 /* Dict.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Dict.hpp; path = ../../src/Dict.hpp; sourceTree = "<group>"; };
+		AC2068DA1C11FA1200D41200 /* DictEntry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DictEntry.cpp; path = ../../src/DictEntry.cpp; sourceTree = "<group>"; };
+		AC2068DB1C11FA1200D41200 /* DictEntry.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = DictEntry.hpp; path = ../../src/DictEntry.hpp; sourceTree = "<group>"; };
+		AC2068DC1C11FA1200D41200 /* DictGroup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DictGroup.cpp; path = ../../src/DictGroup.cpp; sourceTree = "<group>"; };
+		AC2068DD1C11FA1200D41200 /* DictGroup.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = DictGroup.hpp; path = ../../src/DictGroup.hpp; sourceTree = "<group>"; };
+		AC2068DE1C11FA1200D41200 /* Exception.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Exception.hpp; path = ../../src/Exception.hpp; sourceTree = "<group>"; };
+		AC2068DF1C11FA1200D41200 /* Export.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Export.hpp; path = ../../src/Export.hpp; sourceTree = "<group>"; };
+		AC2068E01C11FA1200D41200 /* Lexicon.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Lexicon.hpp; path = ../../src/Lexicon.hpp; sourceTree = "<group>"; };
+		AC2068E11C11FA1200D41200 /* MaxMatchSegmentation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MaxMatchSegmentation.cpp; path = ../../src/MaxMatchSegmentation.cpp; sourceTree = "<group>"; };
+		AC2068E21C11FA1200D41200 /* MaxMatchSegmentation.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = MaxMatchSegmentation.hpp; path = ../../src/MaxMatchSegmentation.hpp; sourceTree = "<group>"; };
+		AC2068E31C11FA1200D41200 /* opencc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = opencc.h; path = ../../src/opencc.h; sourceTree = "<group>"; };
+		AC2068E41C11FA1200D41200 /* Optional.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Optional.hpp; path = ../../src/Optional.hpp; sourceTree = "<group>"; };
+		AC2068E51C11FA1200D41200 /* PhraseExtract.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PhraseExtract.cpp; path = ../../src/PhraseExtract.cpp; sourceTree = "<group>"; };
+		AC2068E61C11FA1200D41200 /* PhraseExtract.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = PhraseExtract.hpp; path = ../../src/PhraseExtract.hpp; sourceTree = "<group>"; };
+		AC2068E71C11FA1200D41200 /* Segmentation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Segmentation.cpp; path = ../../src/Segmentation.cpp; sourceTree = "<group>"; };
+		AC2068E81C11FA1200D41200 /* Segmentation.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Segmentation.hpp; path = ../../src/Segmentation.hpp; sourceTree = "<group>"; };
+		AC2068E91C11FA1200D41200 /* Segments.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Segments.hpp; path = ../../src/Segments.hpp; sourceTree = "<group>"; };
+		AC2068EA1C11FA1200D41200 /* SerializableDict.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = SerializableDict.hpp; path = ../../src/SerializableDict.hpp; sourceTree = "<group>"; };
+		AC2068EB1C11FA1200D41200 /* SimpleConverter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SimpleConverter.cpp; path = ../../src/SimpleConverter.cpp; sourceTree = "<group>"; };
+		AC2068EC1C11FA1200D41200 /* SimpleConverter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = SimpleConverter.hpp; path = ../../src/SimpleConverter.hpp; sourceTree = "<group>"; };
+		AC2068ED1C11FA1200D41200 /* TestUtils.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = TestUtils.hpp; path = ../../src/TestUtils.hpp; sourceTree = "<group>"; };
+		AC2068EE1C11FA1200D41200 /* TextDict.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TextDict.cpp; path = ../../src/TextDict.cpp; sourceTree = "<group>"; };
+		AC2068EF1C11FA1200D41200 /* TextDict.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = TextDict.hpp; path = ../../src/TextDict.hpp; sourceTree = "<group>"; };
+		AC2068F01C11FA1200D41200 /* UTF8StringSlice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = UTF8StringSlice.cpp; path = ../../src/UTF8StringSlice.cpp; sourceTree = "<group>"; };
+		AC2068F11C11FA1200D41200 /* UTF8StringSlice.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = UTF8StringSlice.hpp; path = ../../src/UTF8StringSlice.hpp; sourceTree = "<group>"; };
+		AC2068F21C11FA1200D41200 /* UTF8Util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = UTF8Util.cpp; path = ../../src/UTF8Util.cpp; sourceTree = "<group>"; };
+		AC2068F31C11FA1200D41200 /* UTF8Util.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = UTF8Util.hpp; path = ../../src/UTF8Util.hpp; sourceTree = "<group>"; };
+		AC20693E1C11FA3400D41200 /* OpenCCService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenCCService.h; path = ../../OpenCCService.h; sourceTree = "<group>"; };
+		AC20693F1C11FA3400D41200 /* OpenCCService.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = OpenCCService.mm; path = ../../OpenCCService.mm; sourceTree = "<group>"; };
+		AC2069421C11FAEB00D41200 /* darts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = darts.h; sourceTree = "<group>"; };
+		AC2069441C11FAEB00D41200 /* document.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = document.h; sourceTree = "<group>"; };
+		AC2069451C11FAEB00D41200 /* filestream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = filestream.h; sourceTree = "<group>"; };
+		AC2069471C11FAEB00D41200 /* pow10.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pow10.h; sourceTree = "<group>"; };
+		AC2069481C11FAEB00D41200 /* stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stack.h; sourceTree = "<group>"; };
+		AC2069491C11FAEB00D41200 /* strfunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = strfunc.h; sourceTree = "<group>"; };
+		AC20694A1C11FAEB00D41200 /* prettywriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prettywriter.h; sourceTree = "<group>"; };
+		AC20694B1C11FAEB00D41200 /* rapidjson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rapidjson.h; sourceTree = "<group>"; };
+		AC20694C1C11FAEB00D41200 /* reader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reader.h; sourceTree = "<group>"; };
+		AC20694D1C11FAEB00D41200 /* stringbuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stringbuffer.h; sourceTree = "<group>"; };
+		AC20694E1C11FAEB00D41200 /* writer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = writer.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC2068601C11F99400D41200 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC2068791C11F99400D41200 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC2068841C11F99400D41200 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC20685A1C11F99400D41200 = {
+			isa = PBXGroup;
+			children = (
+				AC2069411C11FAEB00D41200 /* darts-clone */,
+				AC2069431C11FAEB00D41200 /* rapidjson-0.11 */,
+				AC2068C91C11F9D500D41200 /* src */,
+				AC2068AE1C11F9D100D41200 /* dictionary */,
+				AC2068991C11F9C600D41200 /* config */,
+				AC2068651C11F99400D41200 /* OpenCC */,
+				AC20687F1C11F99400D41200 /* OpenCCTests */,
+				AC20688A1C11F99400D41200 /* OpenCCUITests */,
+				AC2068641C11F99400D41200 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AC2068641C11F99400D41200 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC2068631C11F99400D41200 /* OpenCC.app */,
+				AC20687C1C11F99400D41200 /* OpenCCTests.xctest */,
+				AC2068871C11F99400D41200 /* OpenCCUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC2068651C11F99400D41200 /* OpenCC */ = {
+			isa = PBXGroup;
+			children = (
+				AC20693E1C11FA3400D41200 /* OpenCCService.h */,
+				AC20693F1C11FA3400D41200 /* OpenCCService.mm */,
+				AC2068691C11F99400D41200 /* AppDelegate.h */,
+				AC20686A1C11F99400D41200 /* AppDelegate.m */,
+				AC20686C1C11F99400D41200 /* ViewController.h */,
+				AC20686D1C11F99400D41200 /* ViewController.m */,
+				AC20686F1C11F99400D41200 /* Main.storyboard */,
+				AC2068721C11F99400D41200 /* Assets.xcassets */,
+				AC2068741C11F99400D41200 /* LaunchScreen.storyboard */,
+				AC2068771C11F99400D41200 /* Info.plist */,
+				AC2068661C11F99400D41200 /* Supporting Files */,
+			);
+			path = OpenCC;
+			sourceTree = "<group>";
+		};
+		AC2068661C11F99400D41200 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AC2068671C11F99400D41200 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AC20687F1C11F99400D41200 /* OpenCCTests */ = {
+			isa = PBXGroup;
+			children = (
+				AC2068801C11F99400D41200 /* OpenCCTests.m */,
+				AC2068821C11F99400D41200 /* Info.plist */,
+			);
+			path = OpenCCTests;
+			sourceTree = "<group>";
+		};
+		AC20688A1C11F99400D41200 /* OpenCCUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AC20688B1C11F99400D41200 /* OpenCCUITests.m */,
+				AC20688D1C11F99400D41200 /* Info.plist */,
+			);
+			path = OpenCCUITests;
+			sourceTree = "<group>";
+		};
+		AC2068991C11F9C600D41200 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				AC20689A1C11F9C600D41200 /* hk2s.json */,
+				AC20689B1C11F9C600D41200 /* s2hk.json */,
+				AC20689C1C11F9C600D41200 /* s2t.json */,
+				AC20689D1C11F9C600D41200 /* s2tw.json */,
+				AC20689E1C11F9C600D41200 /* s2twp.json */,
+				AC20689F1C11F9C600D41200 /* t2hk.json */,
+				AC2068A01C11F9C600D41200 /* t2s.json */,
+				AC2068A11C11F9C600D41200 /* t2tw.json */,
+				AC2068A21C11F9C600D41200 /* tw2s.json */,
+				AC2068A31C11F9C600D41200 /* tw2sp.json */,
+			);
+			name = config;
+			path = ../config;
+			sourceTree = "<group>";
+		};
+		AC2068AE1C11F9D100D41200 /* dictionary */ = {
+			isa = PBXGroup;
+			children = (
+				AC2068AF1C11F9D100D41200 /* HKVariants.txt */,
+				AC2068B01C11F9D100D41200 /* HKVariantsPhrases.txt */,
+				AC2068B11C11F9D100D41200 /* HKVariantsRevPhrases.txt */,
+				AC2068B21C11F9D100D41200 /* JPVariants.txt */,
+				AC2068B31C11F9D100D41200 /* STCharacters.txt */,
+				AC2068B41C11F9D100D41200 /* STPhrases.txt */,
+				AC2068B51C11F9D100D41200 /* TSCharacters.txt */,
+				AC2068B61C11F9D100D41200 /* TSPhrases.txt */,
+				AC2068B71C11F9D100D41200 /* TWPhrasesIT.txt */,
+				AC2068B81C11F9D100D41200 /* TWPhrasesName.txt */,
+				AC2068B91C11F9D100D41200 /* TWPhrasesOther.txt */,
+				AC2068BA1C11F9D100D41200 /* TWVariants.txt */,
+				AC2068BB1C11F9D100D41200 /* TWVariantsRevPhrases.txt */,
+			);
+			name = dictionary;
+			path = ../../data/dictionary;
+			sourceTree = "<group>";
+		};
+		AC2068C91C11F9D500D41200 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				AC2068CA1C11FA1200D41200 /* BinaryDict.cpp */,
+				AC2068CB1C11FA1200D41200 /* BinaryDict.hpp */,
+				AC2068CC1C11FA1200D41200 /* CmdLineOutput.hpp */,
+				AC2068CD1C11FA1200D41200 /* Common.hpp */,
+				AC2068CE1C11FA1200D41200 /* Config.cpp */,
+				AC2068CF1C11FA1200D41200 /* Config.hpp */,
+				AC2068D01C11FA1200D41200 /* Conversion.cpp */,
+				AC2068D11C11FA1200D41200 /* Conversion.hpp */,
+				AC2068D21C11FA1200D41200 /* ConversionChain.cpp */,
+				AC2068D31C11FA1200D41200 /* ConversionChain.hpp */,
+				AC2068D41C11FA1200D41200 /* Converter.cpp */,
+				AC2068D51C11FA1200D41200 /* Converter.hpp */,
+				AC2068D61C11FA1200D41200 /* DartsDict.cpp */,
+				AC2068D71C11FA1200D41200 /* DartsDict.hpp */,
+				AC2068D81C11FA1200D41200 /* Dict.cpp */,
+				AC2068D91C11FA1200D41200 /* Dict.hpp */,
+				AC2068DA1C11FA1200D41200 /* DictEntry.cpp */,
+				AC2068DB1C11FA1200D41200 /* DictEntry.hpp */,
+				AC2068DC1C11FA1200D41200 /* DictGroup.cpp */,
+				AC2068DD1C11FA1200D41200 /* DictGroup.hpp */,
+				AC2068DE1C11FA1200D41200 /* Exception.hpp */,
+				AC2068DF1C11FA1200D41200 /* Export.hpp */,
+				AC2068E01C11FA1200D41200 /* Lexicon.hpp */,
+				AC2068E11C11FA1200D41200 /* MaxMatchSegmentation.cpp */,
+				AC2068E21C11FA1200D41200 /* MaxMatchSegmentation.hpp */,
+				AC2068E31C11FA1200D41200 /* opencc.h */,
+				AC2068E41C11FA1200D41200 /* Optional.hpp */,
+				AC2068E51C11FA1200D41200 /* PhraseExtract.cpp */,
+				AC2068E61C11FA1200D41200 /* PhraseExtract.hpp */,
+				AC2068E71C11FA1200D41200 /* Segmentation.cpp */,
+				AC2068E81C11FA1200D41200 /* Segmentation.hpp */,
+				AC2068E91C11FA1200D41200 /* Segments.hpp */,
+				AC2068EA1C11FA1200D41200 /* SerializableDict.hpp */,
+				AC2068EB1C11FA1200D41200 /* SimpleConverter.cpp */,
+				AC2068EC1C11FA1200D41200 /* SimpleConverter.hpp */,
+				AC2068ED1C11FA1200D41200 /* TestUtils.hpp */,
+				AC2068EE1C11FA1200D41200 /* TextDict.cpp */,
+				AC2068EF1C11FA1200D41200 /* TextDict.hpp */,
+				AC2068F01C11FA1200D41200 /* UTF8StringSlice.cpp */,
+				AC2068F11C11FA1200D41200 /* UTF8StringSlice.hpp */,
+				AC2068F21C11FA1200D41200 /* UTF8Util.cpp */,
+				AC2068F31C11FA1200D41200 /* UTF8Util.hpp */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		AC2069411C11FAEB00D41200 /* darts-clone */ = {
+			isa = PBXGroup;
+			children = (
+				AC2069421C11FAEB00D41200 /* darts.h */,
+			);
+			name = "darts-clone";
+			path = "../../deps/darts-clone";
+			sourceTree = "<group>";
+		};
+		AC2069431C11FAEB00D41200 /* rapidjson-0.11 */ = {
+			isa = PBXGroup;
+			children = (
+				AC2069441C11FAEB00D41200 /* document.h */,
+				AC2069451C11FAEB00D41200 /* filestream.h */,
+				AC2069461C11FAEB00D41200 /* internal */,
+				AC20694A1C11FAEB00D41200 /* prettywriter.h */,
+				AC20694B1C11FAEB00D41200 /* rapidjson.h */,
+				AC20694C1C11FAEB00D41200 /* reader.h */,
+				AC20694D1C11FAEB00D41200 /* stringbuffer.h */,
+				AC20694E1C11FAEB00D41200 /* writer.h */,
+			);
+			name = "rapidjson-0.11";
+			path = "../../deps/rapidjson-0.11";
+			sourceTree = "<group>";
+		};
+		AC2069461C11FAEB00D41200 /* internal */ = {
+			isa = PBXGroup;
+			children = (
+				AC2069471C11FAEB00D41200 /* pow10.h */,
+				AC2069481C11FAEB00D41200 /* stack.h */,
+				AC2069491C11FAEB00D41200 /* strfunc.h */,
+			);
+			path = internal;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC2068621C11F99400D41200 /* OpenCC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC2068901C11F99400D41200 /* Build configuration list for PBXNativeTarget "OpenCC" */;
+			buildPhases = (
+				AC20685F1C11F99400D41200 /* Sources */,
+				AC2068601C11F99400D41200 /* Frameworks */,
+				AC2068611C11F99400D41200 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenCC;
+			productName = OpenCC;
+			productReference = AC2068631C11F99400D41200 /* OpenCC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AC20687B1C11F99400D41200 /* OpenCCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC2068931C11F99400D41200 /* Build configuration list for PBXNativeTarget "OpenCCTests" */;
+			buildPhases = (
+				AC2068781C11F99400D41200 /* Sources */,
+				AC2068791C11F99400D41200 /* Frameworks */,
+				AC20687A1C11F99400D41200 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC20687E1C11F99400D41200 /* PBXTargetDependency */,
+			);
+			name = OpenCCTests;
+			productName = OpenCCTests;
+			productReference = AC20687C1C11F99400D41200 /* OpenCCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AC2068861C11F99400D41200 /* OpenCCUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC2068961C11F99400D41200 /* Build configuration list for PBXNativeTarget "OpenCCUITests" */;
+			buildPhases = (
+				AC2068831C11F99400D41200 /* Sources */,
+				AC2068841C11F99400D41200 /* Frameworks */,
+				AC2068851C11F99400D41200 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC2068891C11F99400D41200 /* PBXTargetDependency */,
+			);
+			name = OpenCCUITests;
+			productName = OpenCCUITests;
+			productReference = AC2068871C11F99400D41200 /* OpenCCUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC20685B1C11F99400D41200 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = zhenian;
+				TargetAttributes = {
+					AC2068621C11F99400D41200 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					AC20687B1C11F99400D41200 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = AC2068621C11F99400D41200;
+					};
+					AC2068861C11F99400D41200 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = AC2068621C11F99400D41200;
+					};
+				};
+			};
+			buildConfigurationList = AC20685E1C11F99400D41200 /* Build configuration list for PBXProject "OpenCC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC20685A1C11F99400D41200;
+			productRefGroup = AC2068641C11F99400D41200 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC2068621C11F99400D41200 /* OpenCC */,
+				AC20687B1C11F99400D41200 /* OpenCCTests */,
+				AC2068861C11F99400D41200 /* OpenCCUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC2068611C11F99400D41200 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC2068AB1C11F9C600D41200 /* t2tw.json in Resources */,
+				AC2068761C11F99400D41200 /* LaunchScreen.storyboard in Resources */,
+				AC2068A41C11F9C600D41200 /* hk2s.json in Resources */,
+				AC2068C11C11F9D100D41200 /* STPhrases.txt in Resources */,
+				AC2068BD1C11F9D100D41200 /* HKVariantsPhrases.txt in Resources */,
+				AC2068C41C11F9D100D41200 /* TWPhrasesIT.txt in Resources */,
+				AC2068C21C11F9D100D41200 /* TSCharacters.txt in Resources */,
+				AC2068BE1C11F9D100D41200 /* HKVariantsRevPhrases.txt in Resources */,
+				AC2068BC1C11F9D100D41200 /* HKVariants.txt in Resources */,
+				AC2068BF1C11F9D100D41200 /* JPVariants.txt in Resources */,
+				AC2068A81C11F9C600D41200 /* s2twp.json in Resources */,
+				AC2068C61C11F9D100D41200 /* TWPhrasesOther.txt in Resources */,
+				AC2068AD1C11F9C600D41200 /* tw2sp.json in Resources */,
+				AC2068C01C11F9D100D41200 /* STCharacters.txt in Resources */,
+				AC2068AA1C11F9C600D41200 /* t2s.json in Resources */,
+				AC2068AC1C11F9C600D41200 /* tw2s.json in Resources */,
+				AC2068A51C11F9C600D41200 /* s2hk.json in Resources */,
+				AC2068C31C11F9D100D41200 /* TSPhrases.txt in Resources */,
+				AC2068C81C11F9D100D41200 /* TWVariantsRevPhrases.txt in Resources */,
+				AC2068C51C11F9D100D41200 /* TWPhrasesName.txt in Resources */,
+				AC2068A91C11F9C600D41200 /* t2hk.json in Resources */,
+				AC2068731C11F99400D41200 /* Assets.xcassets in Resources */,
+				AC2068711C11F99400D41200 /* Main.storyboard in Resources */,
+				AC2068A71C11F9C600D41200 /* s2tw.json in Resources */,
+				AC2068C71C11F9D100D41200 /* TWVariants.txt in Resources */,
+				AC2068A61C11F9C600D41200 /* s2t.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC20687A1C11F99400D41200 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC2068851C11F99400D41200 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC20685F1C11F99400D41200 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC2068F41C11FA1200D41200 /* BinaryDict.cpp in Sources */,
+				AC2068FF1C11FA1200D41200 /* Segmentation.cpp in Sources */,
+				AC2068F61C11FA1200D41200 /* Conversion.cpp in Sources */,
+				AC2068FE1C11FA1200D41200 /* PhraseExtract.cpp in Sources */,
+				AC20686E1C11F99400D41200 /* ViewController.m in Sources */,
+				AC20686B1C11F99400D41200 /* AppDelegate.m in Sources */,
+				AC2069031C11FA1200D41200 /* UTF8Util.cpp in Sources */,
+				AC2069011C11FA1200D41200 /* TextDict.cpp in Sources */,
+				AC2069001C11FA1200D41200 /* SimpleConverter.cpp in Sources */,
+				AC2068FD1C11FA1200D41200 /* MaxMatchSegmentation.cpp in Sources */,
+				AC2068F91C11FA1200D41200 /* DartsDict.cpp in Sources */,
+				AC2068F51C11FA1200D41200 /* Config.cpp in Sources */,
+				AC2068F71C11FA1200D41200 /* ConversionChain.cpp in Sources */,
+				AC2068F81C11FA1200D41200 /* Converter.cpp in Sources */,
+				AC2068681C11F99400D41200 /* main.m in Sources */,
+				AC2068FA1C11FA1200D41200 /* Dict.cpp in Sources */,
+				AC2068FB1C11FA1200D41200 /* DictEntry.cpp in Sources */,
+				AC2069401C11FA3400D41200 /* OpenCCService.mm in Sources */,
+				AC2069021C11FA1200D41200 /* UTF8StringSlice.cpp in Sources */,
+				AC2068FC1C11FA1200D41200 /* DictGroup.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC2068781C11F99400D41200 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC2068811C11F99400D41200 /* OpenCCTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC2068831C11F99400D41200 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC20688C1C11F99400D41200 /* OpenCCUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AC20687E1C11F99400D41200 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC2068621C11F99400D41200 /* OpenCC */;
+			targetProxy = AC20687D1C11F99400D41200 /* PBXContainerItemProxy */;
+		};
+		AC2068891C11F99400D41200 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC2068621C11F99400D41200 /* OpenCC */;
+			targetProxy = AC2068881C11F99400D41200 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AC20686F1C11F99400D41200 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC2068701C11F99400D41200 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AC2068741C11F99400D41200 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC2068751C11F99400D41200 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AC20688E1C11F99400D41200 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AC20688F1C11F99400D41200 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC2068911C11F99400D41200 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = OpenCC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhenian.OpenCC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AC2068921C11F99400D41200 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = OpenCC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhenian.OpenCC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AC2068941C11F99400D41200 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = OpenCCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhenian.OpenCCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenCC.app/OpenCC";
+			};
+			name = Debug;
+		};
+		AC2068951C11F99400D41200 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = OpenCCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhenian.OpenCCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenCC.app/OpenCC";
+			};
+			name = Release;
+		};
+		AC2068971C11F99400D41200 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = OpenCCUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhenian.OpenCCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = OpenCC;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		AC2068981C11F99400D41200 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = OpenCCUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhenian.OpenCCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = OpenCC;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC20685E1C11F99400D41200 /* Build configuration list for PBXProject "OpenCC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC20688E1C11F99400D41200 /* Debug */,
+				AC20688F1C11F99400D41200 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC2068901C11F99400D41200 /* Build configuration list for PBXNativeTarget "OpenCC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC2068911C11F99400D41200 /* Debug */,
+				AC2068921C11F99400D41200 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC2068931C11F99400D41200 /* Build configuration list for PBXNativeTarget "OpenCCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC2068941C11F99400D41200 /* Debug */,
+				AC2068951C11F99400D41200 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC2068961C11F99400D41200 /* Build configuration list for PBXNativeTarget "OpenCCUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC2068971C11F99400D41200 /* Debug */,
+				AC2068981C11F99400D41200 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC20685B1C11F99400D41200 /* Project object */;
+}

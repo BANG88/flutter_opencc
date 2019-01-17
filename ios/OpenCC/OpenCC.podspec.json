@@ -1,0 +1,71 @@
+{
+  "name": "OpenCC",
+  "version": "1.0.3",
+  "summary": "A project for conversion between Traditional and Simplified Chinese.",
+  "source": {
+    "git": "https://github.com/gelosie/OpenCC.git",
+    "tag": "1.0.3"
+  },
+  "requires_arc": true,
+  "platforms": {
+    "ios": "8.0"
+  },
+  "license": "Apache License 2.0",
+  "source_files": [
+	"src/opencc.h",
+	"src/Exception.hpp",
+	"src/Export.hpp",
+	"src/Lexicon.hpp",
+	"src/Opencc_Export.hpp",
+	"src/Optional.hpp",
+	"src/Common.hpp",
+	"src/Segments.hpp",
+	"src/SerializableDict.hpp",
+	"src/ConversionChain.{hpp,cpp}",
+	"src/Conversion.{hpp,cpp}",
+	"src/Config.{hpp,cpp}",
+	"src/Converter.{hpp,cpp}",
+	"src/BinaryDict.{hpp,cpp}",
+	"src/DartsDict.{hpp,cpp}",
+	"src/Dict.{hpp,cpp}",
+	"src/DictEntry.{hpp,cpp}",
+	"src/MaxMatchSegmentation.{hpp,cpp}",
+	"src/DictGroup.{hpp,cpp}",
+	"src/PhraseExtract.{hpp,cpp}",
+	"src/Segmentation.{hpp,cpp}",
+	"src/SimpleConverter.{hpp,cpp}",
+	"src/TextDict.{hpp,cpp}",
+	"src/UTF8StringSlice.{hpp,cpp}",
+	"src/UTF8Util.{hpp,cpp}",
+	"deps/darts-clone/darts.h",
+	"deps/rapidjson-0.11/document.h",
+	"deps/rapidjson-0.11/filestream.h",
+	"deps/rapidjson-0.11/prettywriter.h",
+	"deps/rapidjson-0.11/rapidjson.h",
+	"deps/rapidjson-0.11/reader.h",
+	"deps/rapidjson-0.11/stringbuffer.h",
+	"deps/rapidjson-0.11/writer.h",
+	"deps/rapidjson-0.11/pow10.h",
+	"deps/rapidjson-0.11/stack.h",
+	"deps/rapidjson-0.11/strfunc.h",
+	"iOS/OpenCCService.{h,mm}"
+  ],
+  "resources": [
+  	"data/dictionary/*.txt",
+  	"data/txtconfig/*.json"
+  ],
+  "libraries": [
+    "c++"
+  ],
+  "xcconfig": {
+    "CLANG_CXX_LANGUAGE_STANDARD" : "c++14",
+    "CLANG_CXX_LIBRARY": "libc++"
+  },
+  "homepage": "https://github.com/BYVoid/OpenCC",
+  "authors": {
+    "BYVoid": "byvoid@byvoid.com"
+  }
+}
+
+
+
